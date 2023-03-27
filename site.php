@@ -9,6 +9,16 @@
 </head>
 <body>
 
+  <div>
+  <a class="More"  href="more.php"> More </a>
+</div>
+<form  action="site.php" method="get">
+        Name: <input type="text" name="name">
+        <br>
+        Age: <input type="number" name="age">
+        <input type="submit">
+    </form>
+
     <?php /*PHP tag when intergrating into html*/
         echo("Hello world");
         echo "<h1> My site </h1>"; /*other tags can be written within the echo function*/
@@ -64,12 +74,12 @@
         echo round(3.7);/**roundas up or down */
         echo "<br>";
         echo floor(3.9); /**always rounds down */
-        echo "<br>";
+        ?>
+        <br>
+        <?php echo $_GET["name"]?>
 
-      
+        <?php echo $_GET["age"] ?>
 
-    ?>
-    
-
+        
 </body>
 </html>
