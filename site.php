@@ -74,11 +74,10 @@
         echo round(3.7);/**roundas up or down */
         echo "<br>";
         echo floor(3.9); /**always rounds down */
+         echo $_GET["name"];
+        echo $_GET["age"];
         ?>
-        <br>
-        <?php echo $_GET["name"]?>
-
-        <?php echo $_GET["age"] ?>
+        
 
         
 </body>

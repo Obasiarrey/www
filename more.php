@@ -22,7 +22,7 @@ $pluralnoun = $_GET["pluralnoun"];
 $celebrity = $_GET["celebrity"];
    echo"Roses are $color <br>";
    echo"$pluralnoun are Blue <br>";
-   echo"i love $celebrity<br>";
+   echo"i love $celebrity <br>";
 ?>
 <!-- buillding a basic calculator-->
 <form action="site.php" method="get">
