@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="Array.php" metod="post">
+        <input type="text" name="student">
+        <input type="Submit">
+    </form>
     <?php
     /*Array is a container or structure to store information. It stores more than one piece of information.*/
     $friends = array("Kevin", "Carrine", "Austin", "Oscar");
@@ -21,7 +25,8 @@
     /*for example stoeing the marks of students on a school system*/
     echo "<br>";
     $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C-");/*Maps a value to a specific students name*/
-    echo $grades["Oscar"];
+    /*echo $grades["Oscar"];*/
+    echo $grades[$_POST["student"]];
     ?>
 
 
