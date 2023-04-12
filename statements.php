@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- switch statements-->  
+    <form action="statements.php" method="post">
+        What was your grade? 
+        <input type="text" name="grade">
+        <input type="Submit">
+</form>
     <!-- Return statements and if statements--> 
     <?php
     function cube($num){
@@ -44,8 +50,30 @@
     }
         
     $getmax = getMax(300, 9000, 200);
-    echo " The maximum number is $getmax";
-    /*In this comparisons we have operators such as '>=', '<=', ==, !=*/
+    echo " The maximum number is $getmax <br>";
+    /*In this comparisons we have operators such as '>=', '<=', '==', '!=' */
+
+    /*switch statememts*/
+    $grade = $_POST["grade"];
+    switch($grade){
+        case "A":
+            echo "You did amazing!";
+            break;
+        case "B":
+            echo "You did pretty good";
+            break;
+        case "C":
+            echo "You did poorly";
+            break;
+        case "D":
+            echo "You did very badly";
+            break;
+        case "F":
+            echo "You FAILED";
+            break;
+        default:
+        echo "Invalid grade";
+    }
     ?>
 </body>
 </html>
